@@ -151,3 +151,6 @@ class Pool(InfiniBoxObject):
 
     def get_filesystem_qos_policy(self):
         return self._get_qos_policy_by_type('POOL_FILESYSTEM')
+    
+    def get_ssd_enabled(self):
+        return self.get_field('ssd_enabled')
